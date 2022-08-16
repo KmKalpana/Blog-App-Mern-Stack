@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.086551d2.css",
-    "main.js": "/static/js/main.844ae082.js",
-    "index.html": "/index.html",
-    "main.086551d2.css.map": "/static/css/main.086551d2.css.map",
-    "main.844ae082.js.map": "/static/js/main.844ae082.js.map"
+    "main.css": "/Blog-App-Mern-Stack/static/css/main.086551d2.css",
+    "main.js": "/Blog-App-Mern-Stack/static/js/main.844ae082.js",
+    "index.html": "/Blog-App-Mern-Stack/index.html",
+    "main.086551d2.css.map": "/Blog-App-Mern-Stack/static/css/main.086551d2.css.map",
+    "main.844ae082.js.map": "/Blog-App-Mern-Stack/static/js/main.844ae082.js.map"
   },
   "entrypoints": [
     "static/css/main.086551d2.css",
