@@ -1,10 +1,9 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
 import axios from "axios";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { authActions } from "../../store";
 import { useNavigate } from "react-router-dom";
-import {useToast} from "@chakra-ui/react";
+import { authActions } from "../../store";
 const Auth = () => {
   const navigate=useNavigate();
   const dispath= useDispatch();
@@ -22,7 +21,7 @@ const Auth = () => {
   }
   const sendRequest = async (type="login")=>{
     const res = await axios
-      .post(`http://localhost:5000/api/user/${type}`, {
+      .post(`https://blog-backend-2.herokuapp.com/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import Signup from './components/authentication/Signup';
 import Homepage from './HomePage';
@@ -16,7 +16,7 @@ function App() {
     <React.Fragment>
     <Homepage />
     <main>
-     <Routes>
+     <HashRouter>
           {!isLoggedIn ? (
             <Route path="/auth" element={<Signup/>} />
           ) : (
@@ -27,7 +27,7 @@ function App() {
               <Route path="/myBlogs/:id" element={<BlogDetail />} />{" "}
             </>
           )}
-        </Routes>
+        </HashRouter>
     </main>
     </React.Fragment>
   );
